@@ -1,5 +1,7 @@
 var data = {
-  directon: 'right'
+  directon: 'right',
+  locationX: 0,
+  locationY: 0
 };
 
 var $img = document.querySelector('img');
@@ -24,3 +26,15 @@ function turnCar(event) {
 }
 
 document.addEventListener('keydown', turnCar);
+
+var styleObj = document.styleSheets[0].cssRules[2].style;
+
+function startCar(event) {
+  if (event.key !== ' ') {
+    return;
+  }
+  styleObj.setProperty('left', '10px');
+}
+
+document.addEventListener('keydown', startCar);
+setInterval(startCar, 16000);

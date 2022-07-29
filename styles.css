@@ -5,10 +5,13 @@
 
 .background {
   background-color: rgb(72 138 54);
+  position: relative;
 }
 
 img {
   width: 15%;
+  position: absolute;
+  left: 0;
 }
 
 .down {
