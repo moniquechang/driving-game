@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  background-color: rgb(72 138 54);
+}
+
+img {
+  width: 15%;
+}
